@@ -1,8 +1,10 @@
 # Cluster List - Get Nodes Output For Multiple Clusters for Kubernetes.  
 
-Simple script to list every single cluster and there nodes in my kuberctl configuration
+Simple script to list every single cluster and there nodes in my kuberctl configuration using 'kubectl get nodes'
 
-In the current working state the script output looks like this. 
+In the current working state the script output looks like this below. 
+
+This is used for getting an overview of all the clusters I might be looking after.
 
 ``` 
 working on contextalbqurqurque-01
@@ -20,6 +22,17 @@ Switched to context "anvil".
 NAME             STATUS    ROLES     AGE       VERSION
 234.30.183.132   Ready     <none>    216d      v1.6.4+coreos.0
 ```
+
+### Installation and running
+
+1. You will need to setup kubectl with the clusters you want to get 'kubectl get nodes' output for. Find you more on doing this at link -> [Install Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
+2. You will need to add the cluster names you want this script to run over to the lab_clusters.txt file.
+3. Run the script with the below command
+
+```
+python3 kube_monitor_v1.py
+```
+
 
 
 
