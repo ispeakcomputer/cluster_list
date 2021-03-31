@@ -1,6 +1,6 @@
 # Cluster List - Get Nodes Output For Multiple Clusters for Kubernetes.  
 
-Simple script to list every single cluster and their nodes in my kuberctl configuration using 'kubectl get nodes'
+Simple script to list every single cluster and their nodes in my kuberctl configuration
 
 In the current working state the script output looks like this below. 
 
